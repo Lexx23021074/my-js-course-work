@@ -6,20 +6,22 @@
  * - Цикл for...of
  * - Різниця у використанні for и for...of
  */
+//!=========================================
+// Використовуємо такий фор лише якщо потрібні індекси. Або якщо плануєте змінювати масив
 
-const friends = ["Mango", "Kiwi", "Poly", "Ajax"];
-console.table(friends);
+// const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(i, fruits[i]);
+// }
 
-for (let i = 0; i < friends.length; i += 1) {
-  friends[i] += `-${i}`;
-}
+//!=========================================
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
 
-console.table(friends);
+// for (const item of friends) {
+//   console.log(item);
+// }
 
-for (let friend of friends) {
-  console.log(friend);
-  console.log(friends);
-}
+//!=========================================
 
 /**
  * Напиши скрипт для обчислення площі прямокутника зі сторонами,
@@ -27,8 +29,14 @@ for (let friend of friends) {
  * Значення гарантовано розділені пробілом.
  */
 
-const values = "8 11";
+// const values = '8 11';
+// const arr = values.split(' '); // ['8', '11']
+// const height = arr[0]; // '8'
+// const width = arr[1]; // '11'
+// const area = height * width;
+// console.log(area);
 
+//!=========================================
 /**
  * Напиши скрипт для перебору масиву fruits.
  * Для кожного елемента масиву виведи в консоль рядок
@@ -36,4 +44,7 @@ const values = "8 11";
  * Нумерація елементів повинна починатися з 1.
  */
 
-const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
+// const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(`${i + 1}: ${fruits[i]}`);
+// }
