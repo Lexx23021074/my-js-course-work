@@ -8,6 +8,7 @@
  * - Індекс останнього елемента
  * - Перевизначення
  */
+//!
 
 const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 console.table(courses);
