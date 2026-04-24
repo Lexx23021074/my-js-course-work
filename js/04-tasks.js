@@ -1,61 +1,31 @@
-/*
- * Типів транзакцій всього два.
- * Можна покласти чи зняти гроші з рахунку.
- */
-const Transaction = {
-  DEPOSIT: "deposit",
-  WITHDRAW: "withdraw",
-};
+// const account = {
+//   balance: 0,
 
-/*
- * Кожна транзакція це об'єкт із властивостями: id, type та amount
- */
+//   deposit(amount) {
+//     this.balance += amount;
+//   },
 
-const account = {
-  // Поточний баланс рахунку
-  balance: 0,
+//   withdraw(amount) {
+//     if (this.balance >= amount) {
+//       this.balance -= amount;
+//     }
+//   },
 
-  // Історія транзакцій
-  transactions: [],
+//   getBalance() {
+//     return this.balance;
+//   },
+// };
 
-  /*
-   * Метод створює та повертає об'єкт транзакції.
-   * Приймає суму та тип транзакції.
-   */
-  createTransaction(amount, type) {},
+// account.deposit(1000);
+// account.deposit(200);
+// account.deposit(500);
 
-  /*
-   * Метод, що відповідає за додавання суми до балансу.
-   * Приймає суму транзакції.
-   * Викликає createTransaction для створення об'єкта транзакції
-   * після чого додає його до історії транзакцій
-   */
-  deposit(amount) {},
+// console.log(account.getBalance());
 
-  /*
-   * Метод, що відповідає за зняття суми з балансу.
-   * Приймає суму транзакції.
-   * Викликає createTransaction для створення об'єкта транзакції
-   * після чого додає його до історії транзакцій.
-   *
-   * Якщо amount більше ніж поточний баланс, виводь повідомлення
-   * про те, що зняття такої суми не можливе, недостатньо коштів.
-   */
-  withdraw(amount) {},
+// account.withdraw(2000);
 
-  /*
-   * Метод повертає поточний баланс
-   */
-  getBalance() {},
+// console.log(account.getBalance());
 
-  /*
-   * Метод шукає та повертає об'єкт транзакції по id
-   */
-  getTransactionDetails(id) {},
+// account.withdraw(1000);
 
-  /*
-   * Метод повертає кількість коштів
-   * певного типу транзакції з усієї історії транзакцій
-   */
-  getTransactionTotal(type) {},
-};
+// console.log(account.getBalance());
