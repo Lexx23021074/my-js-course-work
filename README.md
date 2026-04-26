@@ -1,42 +1,129 @@
-# Додатковий матеріал
 
-## Корисні посилання
+# План заняття
 
-- [Event Loop](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
-- [BUILD you own x](https://github.com/codecrafters-io/build-your-own-x)
-- [awesome](https://github.com/sindresorhus/awesome?tab=readme-ov-file)
-- [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
-- [design-resources-for-developers](https://github.com/bradtraversy/design-resources-for-developers)
-- [coding-interview-university](https://github.com/jwasham/coding-interview-university)
-- [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
-- [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
-- [public-apis](https://github.com/public-apis/public-apis)
-- [javascript-questions](https://github.com/lydiahallie/javascript-questions)
-- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
-- [Back-End-Developer-Interview-Questions](https://github.com/arialdomartini/Back-End-Developer-Interview-Questions)
-- [reverse-interview](https://github.com/viraptor/reverse-interview)
-- [interview](https://github.com/Olshansk/interview)
-- [OpenGuide-AWS](https://github.com/open-guides/og-aws)
-- [Resume Example](https://github.com/Maryinad/Resume)
-- [GIT commands](https://habr.com/ru/articles/813513/)
-- [CheatSheets for Developers](https://dev.to/devmount/a-cheatsheet-of-128-cheatsheets-for-developers-f4m?ref=dailydev)
+1. Пограємо в Kahoot
 
----
+2. Познайомимось з колбек-функціями (практика 01-callbacks.js)
+- Функція як значення
+- Колбек-функції
+- Інлайн-колбеки
 
-## Ютуб канали
+2. Розберемо стрілочні функції (практика 02-arrow-fns.js)
+- Синтаксис
+- Неявне повернення
+- Псевдомасив arguments
+- Колбеки
 
-- [The Coding Train](https://www.youtube.com/@TheCodingTrain)
-- [Школа програмування](https://www.youtube.com/@ProgerSchool)
-- [Code with Ania](https://www.youtube.com/@AniaKubow)
+3. Детально розглянемо метод forEach(callback) ) (практика 03-foreach.js)
 
----
+4. Обговоримо методи map и flatMap
+- Чисті функції
+- Перебираючі методи
+- Метод map() (практика 04-map.js**)**
+- Масив об'єктів
+- Метод flatMap() (практика 05-flatmap.js)
 
-## Плагіни VS-code
+5. Що на вас чекатиме на **наступному занятті**? Ми поговоримо про інші популярні методи та розв’яжемо практичні задачі.
 
-- Auto-Save on Window Change
-- Better Comments
-- Code Spell Checker
-- JavaScript (ES6) code snippets
-- Turbo Console Log
-- Code Runner
-- Backticks
+# 📘 Мій робочий процес (Git Workflow)
+
+## Цей проект налаштований на роботу з двома репозиторіями: **origin** (мій) та **teacher** (викладача).
+
+### 👨‍🏫 1. Репозиторій викладача (`teacher`)
+
+_Використовується для перегляду та отримання нових матеріалів._
+
+1. **Перевірка: "Чий зараз main?"**
+   - Введи `git branch -vv`. `[git fetch --all]'- виведе підключені репо,
+     внашому випадку буде Отримання teacher Отримання origin
+   - Якщо бачиш `[origin/main]` — ти вдома.
+   - Якщо бачиш `[teacher/main]` — ти на території викладача.
+   - Щоб перейти "до вчителя" (подивитися його
+     код):`[git checkout -b teacher-main teacher/main]`. - стоврюємо викладцьку
+     гілку вже зробили `[git checkout teacher-main]` - переходимо у викладцьки
+     репо там затягуємо "новий
+     модуль`[git checkout -b local-module-4-1 teacher/module-4-1]` перевіряємо
+     що ми на новій гілці `[git branch]`
+     <!-- Хочу побачити нову тему вчителя -->
+   - Щоб перейти "до себе" (у свій main): `[git checkout main]`.
+   <!-- Хочу працювати у своєму коді -->
+   - Хочу перевірити, чи є нове у вчителя `[git fetch teacher]`.
+2. **Перехід на іншу гілку (якщо потрібно):** `[git checkout <назва_гілки>]`
+3. **Перевірка оновлень на сервері:** `[git fetch teacher]`
+4. **Завантаження оновлень у локальну папку:** `[git pull teacher main]`
+5. **Список усіх доступних тем (гілок) викладача:** `[git branch -a]`
+<!-- наприклад: remotes/teacher/module-3-1 -->
+
+### 💻 2. Мій робочий репозиторій (origin)
+
+<!-- Тут я створюю власні гілки та зберігаю свою домашку. -->
+
+1. **Перевірка поточної гілки:**
+   - Введи `[git branch -vv]`.
+   - Якщо бачиш `[origin/main]` — ти вдома.
+2. **Перехід на іншу гілку (якщо потрібно):** `[git checkout <назва_гілки>]`
+3. **Створення своєї гілки на базі теми викладача:( назву беремо з п 5
+   викладача)**
+
+   **Наприклад, створюємо local-module-3-1 з гілки викладача module-3-1:**
+
+   `[git checkout -b local-module-3-1 teacher/module-3-1]` **можна викликати
+   список гілок викладача:відразу** `[git branch -r | grep teacher]`
+
+4. **Перехід у вже існуючу робочу гілку:** `[git checkout local-module-3-1]`
+5. **Збереження та відправка роботи на GitHub( в локальний репо):**
+   `[git add .]` `[git commit -m "Виконано завдання модуля 3.1"]`
+   `[git push -u origin local-module-3-1]` // або `[git push -u origin]` main
+   щоб зберегти все скопом//
+
+```
+🛠 3. Шпаргалка "Де я зараз?"Використовуй ці команди, якщо заплутався:
+Команда               Що вона показуєgit
+remote -v             Список підключених репозиторіїв (origin та teacher)
+git branch            Список твоїх локальних гілок (* — де ти зараз)
+git status            Чи є незакомічені зміни у файлах
+git log                --oneline -n 5Останні 5 зроблених комітів
+🔗 посилання Мій GitHub: Lexx23021074/my-js-course-work GitHub викладача:
+GoITteacher/fs-128-js
+
+
+**Як знайти зміни та витягнути їх на GitHub:**
+Тобі потрібно заштовхнути саме ту гілку, в якій ти працював.
+
+Варіант 1: Відправити поточну гілку на GitHub
+Це найкращий варіант, якщо ти хочеш, щоб на GitHub цей модуль лежав окремо:
+
+Bash
+git push origin local-module-3-2
+Після цього зайди на свій GitHub і зверху в списку гілок (там де написано "main") обери "local-module-3-2" — там будуть всі твої нові файли.
+
+Варіант 2: Перенести зміни в main і відправити його
+Якщо ти хочеш, щоб усе було саме в main:
+
+Перейди в main:
+
+Bash
+git checkout main
+Злий зміни з робочої гілки в main:
+
+Bash
+git merge local-module-3-2 /// git merge local-module-3-2 --allow-unrelated-histories
+Відправ оновлений main:
+
+Bash
+git push origin main
+```
+
+# U
+
+### Гіт-гігієна: коли main чистий, кожну нову домашку починай з команди
+
+### git checkout main
+
+### git pull
+
+### git checkout -b module-X-task-Y. - це створить нову гілку
+
+git checkout local-module-3-2 // перейде на існюучу гілку
+
+
